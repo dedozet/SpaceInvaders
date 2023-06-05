@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Space Invaders 1942</title>
+    <style>
+      canvas {
+        width: 600px;
+        height: 600px;
+        background-color: black;
+        box-shadow: black 20px 10px 50px;
+        position: relative;
+      }
+      h1 {
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 2.9em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        height: 100vh;
+        background: linear-gradient(
+          0deg rgb(97, 98, 99) 0% rgba(0, 0, 0, 0) 100%
+        );
+      }
+      button {
+        position: absolute;
+        padding: 10px;
+        background-color: black;
+        border: 2px solid lime;
+        color: lime;
+      }
+      table {
+        top: 35%;
+        position: absolute;
+        padding: 15px 15px;
+        border-spacing: 30px 10px;
+        column-gap: 40px;
+        word-break: normal;
+        background-color: black;
+        border: 2px solid lime;
+        color: lime;
+      }
+      #ld_button {
+        top: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Player Scores</h1>
+    <canvas></canvas>
+    <table>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <button id="ld_button">Back</button>
+    <script type="module" src="leaderboard.js"></script>
+  </body>
+</html>

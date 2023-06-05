@@ -1,0 +1,7 @@
+{
+    "levels":[
+      {"levelNumber":"1", "grid":[[1,1,1]], "alienCount":3},
+      {"levelNumber":"2", "grid":[[1,1,1,1,1],[1,1,1,1,1]], "alienCount":10},
+      {"levelNumber":"3", "grid":[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]], "alienCount":15}
+    ]
+    }
